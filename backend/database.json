@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": "1770826447166",
+      "name": "test",
+      "email": "testi@test.com",
+      "password": "$2b$10$CQE3UE.Tk7JsgoqsCXBec.pFIHpTYEixj7YT8wBdhzVxOYG.4z6UG",
+      "createdAt": "2026-02-11T16:14:07.166Z"
+    },
+    {
+      "id": "1770827905398",
+      "name": "test",
+      "email": "test@test.com",
+      "password": "$2b$10$ENTAlMxzKtnjH2KfEDR07uyf7tWPxFg.eXctOCFNU6XpGFgPNjRfq",
+      "createdAt": "2026-02-11T16:38:25.398Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1770877305451",
+      "title": "tt",
+      "description": "dcd",
+      "status": "pending",
+      "userId": "1770826447166",
+      "createdAt": "2026-02-12T06:21:45.451Z",
+      "updatedAt": "2026-02-12T06:21:45.451Z"
+    },
+    {
+      "id": "1770879132430",
+      "title": "tgtt",
+      "description": "erglver;k",
+      "status": "pending",
+      "userId": "1770827905398",
+      "createdAt": "2026-02-12T06:52:12.430Z",
+      "updatedAt": "2026-02-12T06:52:12.430Z"
+    }
+  ]
+}

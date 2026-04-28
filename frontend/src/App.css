@@ -1,0 +1,386 @@
+/* ROOT */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* Beautiful Animated Background */
+body {
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Logo / App Title */
+.logo {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  color: white;
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+/* Glass Card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2.5em;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Soft Text */
+.read-the-docs {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  margin-top: 20px;
+}
+/* Center Auth Container Properly */
+.auth-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Smooth fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.auth-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Form Layout */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Inputs */
+.form-control {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.form-control:focus {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transform: scale(1.02);
+}
+
+/* Button Styling */
+.btn-primary {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 114, 255, 0.5);
+}
+
+/* Error Message */
+.error {
+  background: rgba(255, 0, 0, 0.2);
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-top: 5px;
+  color: #fff;
+}
+
+/* Register Link */
+.auth-container a {
+  color: #ffd369;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* TaskForm.css - For your specific TaskForm component */
+
+.task-form-container {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #4a90e2;
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.form-control:hover {
+    background-color: white;
+    border-color: #bbb;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.error {
+    display: block;
+    margin-top: 6px;
+    color: #dc3545;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.task-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #357abd;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(74, 144, 226, 0.2);
+}
+
+.btn-primary:disabled {
+    background-color: #a0c0e8;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2);
+}
+
+/* Loading state for button */
+.btn-primary:disabled {
+    opacity: 0.8;
+    cursor: wait;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .task-form-container {
+        padding: 20px;
+    }
+
+    .task-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .form-title {
+        font-size: 1.3rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .task-form-container {
+        background: #2d2d2d;
+        border-color: #404040;
+    }
+
+    .form-title {
+        color: #e0e0e0;
+        border-bottom-color: #404040;
+    }
+
+    .form-group label {
+        color: #ccc;
+    }
+
+    .form-control {
+        background-color: #3d3d3d;
+        border-color: #505050;
+        color: #e0e0e0;
+    }
+
+    .form-control:focus {
+        background-color: #454545;
+        border-color: #4a90e2;
+    }
+
+    .form-control:hover {
+        background-color: #454545;
+        border-color: #666;
+    }
+
+    select.form-control {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ccc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    }
+
+    .btn-primary {
+        background-color: #4a90e2;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+    }
+
+logout-btn {
+            background-color: 'transparent';
+            border:'2px solid rgba(255, 255, 255, 0.7)';
+            bordeRadius: '20px';
+            padding: '6px 18px';
+            fontSize: '0.9rem';
+            fontWeight: '600';
+            cursor: 'pointer';
+            transition: 'all 0.3s ease';
+            letterSpacing: '0.5px';
+            outline: 'none';
+            boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)';
+}
+ user-info {
+  padding: 5%;
+            color: '#ffffff';
+            fontSize: '1rem';
+            fontWeight: '500';
+            letterSpacing: '0.3px';
+            fontFamily: 'Arial, sans-serif';
+        }
+    }
