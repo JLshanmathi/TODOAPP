@@ -6,11 +6,6 @@ A full-stack Todo Management Application built using the MERN Stack. The applica
 
 https://todoapp-1-c8d3.onrender.com/login
 
-## GitHub Repository
-
-https://github.com/JLshanmathi/TODOAPP
-
----
 
 ## Features
 
@@ -102,29 +97,6 @@ cd frontend
 npm install
 npm run dev
 ```
-
----
-
-## Environment Variables
-
-Backend
-
-```
-PORT=
-MONGO_URI=
-JWT_SECRET=
-CLIENT_URL=
-```
-
-Frontend
-
-```
-VITE_API_URL=
-VITE_SOCKET_URL=
-```
-
----
-
 ## Future Enhancements
 
 - Due Date Reminders
@@ -135,10 +107,3 @@ VITE_SOCKET_URL=
 - Email Notifications
 
 ---
-
-## Author
-
-**Shanmathi J. L.**
-
-GitHub:
-https://github.com/JLshanmathi
